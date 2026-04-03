@@ -1,0 +1,372 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.Vigil-x86_64-apple-macosx15.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/sources",
+      "importPath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/DeviceManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/OverlayWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/ProcessManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/SocketManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/TouchBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/TranscriptStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/VigilApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/VigilPopoverView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "Vigil",
+      "moduleOutputPath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Modules/Vigil.swiftmodule",
+      "objects" : [
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/DeviceManager.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/OverlayWindow.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/ProcessManager.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/SocketManager.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TouchBarController.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TranscriptStore.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilApp.swift.o",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilPopoverView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-apple-macosx15.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j16",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "Vigil_main",
+        "-swift-version",
+        "6",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "vigil"
+      ],
+      "outputFileMapPath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/DeviceManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/OverlayWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/ProcessManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/SocketManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TouchBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TranscriptStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilPopoverView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Modules/Vigil.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/beskar/git/vigil/Sources/DeviceManager.swift",
+        "/Users/beskar/git/vigil/Sources/OverlayWindow.swift",
+        "/Users/beskar/git/vigil/Sources/ProcessManager.swift",
+        "/Users/beskar/git/vigil/Sources/SocketManager.swift",
+        "/Users/beskar/git/vigil/Sources/TouchBarController.swift",
+        "/Users/beskar/git/vigil/Sources/TranscriptStore.swift",
+        "/Users/beskar/git/vigil/Sources/VigilApp.swift",
+        "/Users/beskar/git/vigil/Sources/VigilPopoverView.swift"
+      ],
+      "tempsPath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "Vigil" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "Vigil",
+      "-package-name",
+      "vigil",
+      "-c",
+      "/Users/beskar/git/vigil/Sources/DeviceManager.swift",
+      "/Users/beskar/git/vigil/Sources/OverlayWindow.swift",
+      "/Users/beskar/git/vigil/Sources/ProcessManager.swift",
+      "/Users/beskar/git/vigil/Sources/SocketManager.swift",
+      "/Users/beskar/git/vigil/Sources/TouchBarController.swift",
+      "/Users/beskar/git/vigil/Sources/TranscriptStore.swift",
+      "/Users/beskar/git/vigil/Sources/VigilApp.swift",
+      "/Users/beskar/git/vigil/Sources/VigilPopoverView.swift",
+      "-I",
+      "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Modules",
+      "-target",
+      "x86_64-apple-macosx15.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j16",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "Vigil_main",
+      "-swift-version",
+      "6",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "vigil",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "Vigil" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil-entitlement.plist"
+    },
+    "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/DeviceManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/OverlayWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/ProcessManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/SocketManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/TouchBarController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/TranscriptStore.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/VigilApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/Sources/VigilPopoverView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/sources"
+    },
+    "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/DeviceManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/OverlayWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/ProcessManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/SocketManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TouchBarController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/TranscriptStore.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.build/VigilPopoverView.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/Vigil.product/Objects.LinkFileList"
+    },
+    "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/beskar/git/vigil/.build/x86_64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

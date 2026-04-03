@@ -55,6 +55,10 @@ class DeviceManager: ObservableObject {
         removeListeners()
     }
 
+    nonisolated func cleanupFromDeinit() {
+        // Safe to call from nonisolated context — only touches non-actor state
+    }
+
     // MARK: - Device enumeration
 
     func refreshDevices() {
@@ -212,6 +216,7 @@ class DeviceManager: ObservableObject {
 
     private func removeListeners() {
         guard let block = listenerBlock else { return }
+
         var devicesAddr = AudioObjectPropertyAddress(
             mSelector: kAudioHardwarePropertyDevices,
             mScope: kAudioObjectPropertyScopeGlobal,
@@ -220,5 +225,25 @@ class DeviceManager: ObservableObject {
         AudioObjectRemovePropertyListenerBlock(
             AudioObjectID(kAudioObjectSystemObject), &devicesAddr, DispatchQueue.main, block
         )
+
+        var inputAddr = AudioObjectPropertyAddress(
+            mSelector: kAudioHardwarePropertyDefaultInputDevice,
+            mScope: kAudioObjectPropertyScopeGlobal,
+            mElement: kAudioObjectPropertyElementMain
+        )
+        AudioObjectRemovePropertyListenerBlock(
+            AudioObjectID(kAudioObjectSystemObject), &inputAddr, DispatchQueue.main, block
+        )
+
+        var outputAddr = AudioObjectPropertyAddress(
+            mSelector: kAudioHardwarePropertyDefaultOutputDevice,
+            mScope: kAudioObjectPropertyScopeGlobal,
+            mElement: kAudioObjectPropertyElementMain
+        )
+        AudioObjectRemovePropertyListenerBlock(
+            AudioObjectID(kAudioObjectSystemObject), &outputAddr, DispatchQueue.main, block
+        )
+
+        listenerBlock = nil
     }
 }

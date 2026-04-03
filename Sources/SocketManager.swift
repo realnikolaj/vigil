@@ -90,12 +90,17 @@ class SocketManager: ObservableObject {
         }
     }
 
+    private var statusConnection: SocketConnection?
+
     func checkStatus() {
         let conn = SocketConnection(path: socketPath)
+        statusConnection = conn  // prevent GC while reading
         conn.onMessage = { [weak self] message in
             if let newState = DaemonState(rawValue: message.trimmingCharacters(in: .whitespacesAndNewlines)) {
                 DispatchQueue.main.async {
                     self?.state = newState
+                    self?.statusConnection?.disconnect()
+                    self?.statusConnection = nil
                 }
             }
         }

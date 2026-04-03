@@ -88,6 +88,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         print("[Vigil] Ready")
     }
 
+    func applicationWillTerminate(_ notification: Notification) {
+        removeCapsLockMonitor()
+        deviceManager.cleanup()
+        transcriptStore.close()
+        processManager.stopDaemon()
+    }
+
     @objc private func togglePopover() {
         guard let button = statusItem.button else { return }
         if popover.isShown {
@@ -115,18 +122,25 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var lastCapsLockTime: TimeInterval = 0
 
     private func setupCapsLockMonitor() {
-        // Caps Lock fires flagsChanged on both press and release.
-        // Only toggle on the transition TO capsLock being set (press, not release).
-        // Debounce at 500ms to prevent double-fire.
         capsLockMonitor = NSEvent.addGlobalMonitorForEvents(matching: .flagsChanged) { [weak self] event in
-            guard let self = self else { return }
             let hasCapsLock = event.modifierFlags.contains(.capsLock)
             let now = ProcessInfo.processInfo.systemUptime
-            if hasCapsLock && (now - self.lastCapsLockTime) > 0.5 {
-                self.lastCapsLockTime = now
-                self.socketManager.toggle()
-                self.updateMenuBarIcon()
+            // Dispatch to main thread to avoid actor isolation crash with NSPopover
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                if hasCapsLock && (now - self.lastCapsLockTime) > 0.5 {
+                    self.lastCapsLockTime = now
+                    self.socketManager.toggle()
+                    self.updateMenuBarIcon()
+                }
             }
+        }
+    }
+
+    private func removeCapsLockMonitor() {
+        if let monitor = capsLockMonitor {
+            NSEvent.removeMonitor(monitor)
+            capsLockMonitor = nil
         }
     }
 
